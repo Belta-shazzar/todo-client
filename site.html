@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Application</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      :root {
+        --primary: #edb046;
+        --secondary: #ba5112;
+        --text: #251814;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: var(--text);
+        background-color: #f5f5f5;
+      }
+
+      header {
+        background-color: var(--primary);
+        padding: 10px 0;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+        padding: 0 20px;
+      }
+
+      nav li {
+        margin-left: 10px;
+      }
+
+      .btn {
+        background-color: var(--secondary);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: var(--primary);
+        color: var(--text);
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      .hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        background-color: var(--primary);
+        color: white;
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 600px;
+      }
+
+      .features,
+      .testimonials,
+      .cta {
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .feature-list,
+      .testimonial-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      .feature-item,
+      .testimonial-item {
+        background-color: white;
+        padding: 20px;
+        margin: 10px;
+        border: 1px solid var(--secondary);
+        border-radius: 8px;
+        flex-basis: 30%;
+      }
+
+      .cta {
+        background-color: var(--secondary);
+        color: white;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: var(--primary);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><button class="btn" id="loginBtn">Login</button></li>
+          <li><button class="btn" id="signupBtn">Sign Up</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to TodoApp</h1>
+          <p>Your ultimate task management tool to boost productivity.</p>
+          <button class="btn" id="getStartedBtn">Get Started</button>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2>Features</h2>
+        <div class="feature-list">
+          <div class="feature-item">
+            <h3>Easy to Use</h3>
+            <p>Our intuitive design lets you manage tasks effortlessly.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Stay Organized</h3>
+            <p>Keep track of your tasks and deadlines efficiently.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Collaborate</h3>
+            <p>Share tasks with your team and work together seamlessly.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-list">
+          <div class="testimonial-item">
+            <p>"TodoApp has transformed how I manage my daily tasks!" - Jane Doe</p>
+          </div>
+          <div class="testimonial-item">
+            <p>"The best task manager I've ever used. Highly recommend!" - John Smith</p>
+          </div>
+          <div class="testimonial-item">
+            <p>"Simple, effective, and great for team projects." - Emily Davis</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <h2>Ready to Get Started?</h2>
+        <button class="btn" id="ctaBtn">Sign Up Now</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 TodoApp. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js">
+              document.getElementById('loginBtn').addEventListener('click', function() {
+        alert('Login button clicked');
+      });
+
+      document.getElementById('signupBtn').addEventListener('click', function() {
+        alert('Sign Up button clicked');
+      });
+
+      document.getElementById('getStartedBtn').addEventListener('click', function() {
+        alert('Get Started button clicked');
+      });
+
+      document.getElementById('ctaBtn').addEventListener('click', function() {
+        alert('Sign Up Now button clicked');
+      });
+    </script>
+  </body>
+</html>
