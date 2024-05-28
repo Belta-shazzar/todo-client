@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-[70vh] flex relative overflow-hidden">
+    <div class="h-[70vh] flex relative overflow-hidden text-text">
       <nav
         class="fixed z-30 top-0 left-0 w-full text-white py-2 pl-2 font-semibold md:font-extrabold md:text-xl md:py-4 md:pl-4"
         :class="{ scroll: isScrolled }"
